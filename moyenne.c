@@ -15,6 +15,7 @@ void main()
      printf("Note %d : ", I+1);
      scanf("%d", &A[I]);
     }
+    
  /* Affichage du tableau */
  printf("Voici vos notes :\n");
  for (I=0; I<N; I++){

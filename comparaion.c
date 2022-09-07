@@ -1,5 +1,6 @@
 #include <stdio.h>
 void main(){
+    
     int num1,num2;
    printf("\n Enter deux valeurs : num1 and num2   :  \n");
   	scanf("%d%d%d", &num1, &num2);

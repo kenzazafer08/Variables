@@ -3,7 +3,6 @@
 
 
 int main() {
-
     int age; // declartion 
     age = 22; // initialization
     int ageofGradution;
