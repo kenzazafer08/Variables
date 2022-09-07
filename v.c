@@ -51,13 +51,17 @@ int main() {
     if(age >= 18)// vérifie si le premier opérande est supérieur ou égal au deuxième opérande.
     {
        printf("I'm an adult\n");
-    }else printf("Still a teenager !\n");
+    }
+    else printf("Still a teenager !\n");
     if(Moyenne < 10)// vérifie si le premier opérande est inférieure au deuxième opérande.
     {
         printf("I have low grades i need to work on my skills\n");
-    }else if(Moyenne == 10)//vérifie si les deux opérandes sont égales ou non.
-    {printf("My grades are average\n");
-    }else printf("My grades are good");
+    }
+    else if(Moyenne == 10)//vérifie si les deux opérandes sont égales ou non.
+    {
+        printf("My grades are average\n");
+    }
+    else printf("My grades are good");
     
     return 0;
 };
