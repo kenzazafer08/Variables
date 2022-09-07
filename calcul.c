@@ -23,7 +23,7 @@ int main(){
   			result = num1 / num2;
   			break;
 		default:
-			printf("\n You have enetered an Invalid Operator ");				    			
+			printf("\n Vous avez entré un opérateur non valide ");				    			
 	}
   
 	printf("\n The result of %.2f %c %.2f  = %.2f", num1, Op, num2, result);
