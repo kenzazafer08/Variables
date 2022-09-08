@@ -25,9 +25,10 @@
   - L'instruction if ... else : permet de verifié plusieur condition sure plusieure variables.
   - L'instruction switch : permet de verfié des condition sur le contenu de la meme variable.
  
-- les structures conditionnelles : qui permettent de tester si une condition est vraie ou non :
-  - L'instruction if ... else : permet de verifié plusieur condition sure plusieure variables.
-  - L'instruction switch : permet de verfié des condition sur le contenu de la meme variable.
+- les boucles : moyenne de repeter un ensemples des instructions :
+  - L'instruction while ... : permet de repéte les instruction autant qu'une condition est vrai.
+  - L'instruction do ...while : permet de repéte les instruction autant qu'une condition est vrai mais le code s'execute au moin une fois.
+  - L'instruction for ... : permet de repéte les instruction un nombre fixé de fois.
 
 
 
