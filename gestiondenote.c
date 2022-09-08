@@ -9,7 +9,7 @@ void main()
  int Moyenne;   
  int Somme=0;
  char nom[20]; /* chaine de caractaires  */
- int x=1,choix,tmp;
+ int x=1,choix;
  
   printf("Entrer votre nom : \n");
   scanf("%s", &nom );
@@ -32,6 +32,7 @@ void main()
    Somme = Somme+A[I];
  }
  do {
+    int tmp;
 printf("Calculer la moyenne 1: \n");
  printf("la meilleure note 2: \n");
  printf("la mauvaise note 3: \n");
@@ -53,6 +54,7 @@ printf("Calculer la moyenne 1: \n");
   			break;
   		case 2 :
              printf("\n");
+             
              for (I=0; I<N; I++){
              if(A[I+1]>A[I]){
                 tmp=A[I+1];
@@ -60,6 +62,7 @@ printf("Calculer la moyenne 1: \n");
          }printf("La meilleure note est : %d",tmp);
          break;
          case 3 :
+        
              printf("\n");
              for (I=0; I<N; I++){
              if(A[I+1]< A[I]){
@@ -68,6 +71,7 @@ printf("Calculer la moyenne 1: \n");
          }printf("La mauvaise note est : %d",tmp);
          break;
          case 4 :
+         
              printf("\n");
              for (I=0; I<N; I++){
              if(A[I+1]> A[I]){
@@ -75,7 +79,10 @@ printf("Calculer la moyenne 1: \n");
                 A[I+1]=A[I];
                 A[I]=tmp;
              }    
-         }printf("La mauvaise note est : %d",tmp);
+         }printf("Voici vos notes trier :\n");
+            for (I=0; I<N; I++){
+            printf(" Note %d = %d \n", I+1,A[I]);
+          }
          break;
 		default:
 			printf("\n Vous avez entré un choix non valide ");				    			
