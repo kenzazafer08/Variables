@@ -3,8 +3,8 @@
 void main()
 {
 
- /* mon tableau   */
- int N;   int A[N];  
+ 
+ int N; /*DIMENTION DU TABLEAU */  int A[N];  /* mon tableau   */
  int I;     
  float Moyenne;   
  int Somme=0;
@@ -15,6 +15,7 @@ void main()
   scanf("%s", &nom );
   printf("Bonjour %s Vous voulez entrer combien de notes (max.10) : ",nom);
   scanf("%d", &N );
+  /* Remplissage du tableau */
  for (I=0; I<N; I++)
     {
      printf("Note %d : ", I+1);
@@ -39,10 +40,10 @@ printf("Calculer la moyenne 1: \n");
  scanf("%d",&choix);
    	switch(choix)
   	{
-  		case 1: 
+  		case 1: /* calculer la moyenne des notes stocker dans le tableau */
    			 printf("\n");
              Moyenne = Somme/N;
-             printf("Votre moyenne est: %.2f ,",Moyenne);
+             printf("Votre moyenne est: %.2f ,",Moyenne);/* Affichage du moyenne */
              if(Moyenne>=12){
                printf("vous etes admis");
               }
@@ -51,17 +52,17 @@ printf("Calculer la moyenne 1: \n");
               }
              else printf("vous etes exclu");
   			break;
-  		case 2 :
+  		/*case 2 :  Déterminer le maximum 
         int tmp=A[0];
              printf("\n");
              
-             for (I=0; I<=N; I++){
-             if(A[I]>=tmp){
-                tmp=A[I];
+             for (I=0; I<N; I++){
+             if(A[I+1]>=tmp){
+                tmp=A[I+1];
              }    
          }printf("La meilleure note est : %d",tmp);
          break;
-         case 3 :
+         case 3 : /* Trier les notes
          int t;
              printf("\n");
              for (I=0; I<N; I++){
@@ -70,11 +71,11 @@ printf("Calculer la moyenne 1: \n");
                 A[I+1]=A[I];
                 A[I]=t;
              }    
-         }printf("Voici vos notes trier :\n");
+         }printf("Voici vos notes trier :\n");  affichage du tableau apres trie
             for (I=0; I<N; I++){
             printf(" Note %d = %d \n", I+1,A[I]);
           }
-         break;
+         break;*/
 		default:
 			printf("\n Vous avez entré un choix non valide ");				    			
 	}

@@ -6,7 +6,7 @@ void main()
  int A[10]; /* mon tableau   */
  int N;    
  int I;     
- int Moyenne;   
+ float Moyenne;   
  int Somme=0;
  char nom[20]; /* chaine de caractaires  */
  int x=1;
@@ -36,7 +36,7 @@ void main()
  }
  printf("\n");
  Moyenne = Somme/N;
- printf("Votre moyenne est: %d ,",Moyenne);
+ printf("Votre moyenne est: %.2f ,",Moyenne);
  if(Moyenne>=12){
     printf("vous etes admis");
  }
