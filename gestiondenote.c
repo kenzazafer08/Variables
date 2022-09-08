@@ -52,30 +52,32 @@ printf("Calculer la moyenne 1: \n");
               }
              else printf("vous etes exclu");
   			break;
-  		/*case 2 :  Déterminer le maximum 
-        int tmp=A[0];
+  		case 2 : /*MAXIMUM*/
+        int tmp=0,position;
              printf("\n");
              
              for (I=0; I<N; I++){
-             if(A[I+1]>=tmp){
-                tmp=A[I+1];
+             if(A[I]>tmp){
+                tmp=A[I];
+                position=I+1;
              }    
-         }printf("La meilleure note est : %d",tmp);
+         }printf("La meilleure note est : Note %d : %d",position,tmp);
          break;
-         case 3 : /* Trier les notes
-         int t;
+         case 3 :/*TRIE*/
+         int t=0;
              printf("\n");
              for (I=0; I<N; I++){
-             if(A[I+1]> A[I]){
+             if(A[I+1]>= A[I]){
                 t=A[I+1];
                 A[I+1]=A[I];
                 A[I]=t;
+                t=0;
              }    
-         }printf("Voici vos notes trier :\n");  affichage du tableau apres trie
+         }printf("Voici vos notes trier :\n");
             for (I=0; I<N; I++){
             printf(" Note %d = %d \n", I+1,A[I]);
           }
-         break;*/
+         break;
 		default:
 			printf("\n Vous avez entré un choix non valide ");				    			
 	}
