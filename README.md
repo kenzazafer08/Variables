@@ -30,7 +30,8 @@
   - L'instruction do ...while : permet de repéte les instruction autant qu'une condition est vrai mais le code s'execute au moin une fois.
   - L'instruction for ... : permet de repéte les instruction un nombre fixé de fois.
   
-- tableaux : moyenne de stocker une suite de données de meme type pour les manipuler on utilisaton l'indice de position  :
+- les tableaux : moyenne de stocker une suite de données de meme type pour les manipuler on utilisaton l'indice de position.
+- les chaine de caracteres : tableau de type char.
 
 
 
