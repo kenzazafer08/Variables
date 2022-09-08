@@ -1,6 +1,8 @@
 # L'état d'avancement
  J'ai fait une revision sur les types de variables ,comment on peut lire et ecrire chaque  type de variable aussi les operateurs arithmetique et logique.
  
+- les opérateurs : 
+ 
  - les operateurs arithmetique : on trouve l'addition ,la soustraction ,la multiplication , la division et le module ui renvoi le rest d'une divistion.
  
  - les operateures d'increntation : permet soit d'incrementer une variable d'un un ou le decrementer.
