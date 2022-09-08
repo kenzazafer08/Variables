@@ -7,7 +7,10 @@ void main()
  int I;     
  int Moyenne;   
  int Somme=0;
-  printf("calculer votre moyenne : ");
+ char nom[20]; /* chaine de caractaires  */
+ bool y=1; /* chaine de caractaires  */
+  printf("Bonjour ! Entrer votre nom : \n");
+  scanf("%s \n", &nom );
  printf("Combien de note vous voulez entrer (max.10) : ");
  scanf("%d", &N );
  for (I=0; I<N; I++)
