@@ -19,7 +19,7 @@ int main() {
     printf("my score is : %d\n" , Moyenne);
 
     char FirstNameLetter = 'k'; // single char
-    char FullName[] = "kenza"; // array of chars 
+    char FullName[] = "kanza"; // array of chars 
 
     printf("The first letter in my name is : %c \n", FirstNameLetter);
     printf("My full name is : %s\n", FullName);
