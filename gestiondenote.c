@@ -53,17 +53,17 @@ printf("Calculer la moyenne 1: \n");
              else printf("vous etes exclu");
   			break;
   		case 2 :
-        int tmp=0;
+        int tmp;
              printf("\n");
              
              for (I=0; I<N; I++){
-             if(A[I]>tmp){
-                tmp=A[I];
+             if(A[I+1]>A[I]){
+                tmp=A[I+1];
              }    
          }printf("La meilleure note est : %d",tmp);
          break;
          case 3 :
-        int tm=A[0];
+        int tm=100;
              printf("\n");
              for (I=0; I<N; I++){
              if(A[I]< tm){
