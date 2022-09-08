@@ -1,9 +1,9 @@
 # L'état d'avancement
- -les variables :  déclarée à l’aide d’un type et d’un identificateur pour stocké une donnée que nous voulont la manipuler dans notre programme .
-   - Integer : int.
-   - reel : float , double.
-   - caractere : char.
-   - bool : 0 ou 1.
+  -les variables :  déclarée à l’aide d’un type et d’un identificateur pour stocké une donnée que nous voulont la manipuler dans notre programme .
+     - Integer : int.
+     - reel : float , double.
+     - caractere : char.
+     - bool : 0 ou 1.
    
    
  
