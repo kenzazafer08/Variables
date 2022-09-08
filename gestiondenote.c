@@ -6,7 +6,7 @@ void main()
  /* mon tableau   */
  int N;   int A[N];  
  int I;     
- int Moyenne;   
+ float Moyenne;   
  int Somme=0;
  char nom[20]; /* chaine de caractaires  */
  int x=1,choix;
@@ -35,15 +35,14 @@ void main()
     
 printf("Calculer la moyenne 1: \n");
  printf("la meilleure note 2: \n");
- printf("la mauvaise note 3: \n");
- printf("trier vos notes 4: \n");
+ printf("trier vos notes 3: \n");
  scanf("%d",&choix);
    	switch(choix)
   	{
-  		case 1:
+  		case 1: 
    			 printf("\n");
              Moyenne = Somme/N;
-             printf("Votre moyenne est: %d ,",Moyenne);
+             printf("Votre moyenne est: %.2f ,",Moyenne);
              if(Moyenne>=12){
                printf("vous etes admis");
               }
@@ -53,25 +52,16 @@ printf("Calculer la moyenne 1: \n");
              else printf("vous etes exclu");
   			break;
   		case 2 :
-        int tmp;
+        int tmp=A[0];
              printf("\n");
              
-             for (I=0; I<N; I++){
-             if(A[I+1]>A[I]){
-                tmp=A[I+1];
+             for (I=0; I<=N; I++){
+             if(A[I]>=tmp){
+                tmp=A[I];
              }    
          }printf("La meilleure note est : %d",tmp);
          break;
          case 3 :
-        int tm=100;
-             printf("\n");
-             for (I=0; I<N; I++){
-             if(A[I]< tm){
-                tm=A[I];
-             }    
-         }printf("La mauvaise note est : %d",tm);
-         break;
-         case 4 :
          int t;
              printf("\n");
              for (I=0; I<N; I++){
