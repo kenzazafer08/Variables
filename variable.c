@@ -43,7 +43,6 @@ int main() {
     printf("The current year is : %d \n",currentyear);
     salaire_annuel  = salaire * 12;//multiplication
     printf("Your annual salary is : %d\n",salaire_annuel);
-
     div = a / b ;// divise le premier opérande par le second.
     rest = a % b ;// renvoie le reste lorsque le premier opérande est divisé par le second
     printf("le resultat de la division est : %d \nle rest de la division est : %d\n",div,rest);
