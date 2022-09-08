@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdbool.h>
 void main()
 {
 
@@ -8,11 +9,12 @@ void main()
  int Moyenne;   
  int Somme=0;
  char nom[20]; /* chaine de caractaires  */
- bool y=1; /* chaine de caractaires  */
-  printf("Bonjour ! Entrer votre nom : \n");
-  scanf("%s \n", &nom );
- printf("Combien de note vous voulez entrer (max.10) : ");
+  printf("Entrer votre nom : \n");
+  scanf("%s", &nom );
+ printf("Bonjour %s Vous voulez calculer la moyenne de combien de notes (max.10) : ",nom);
  scanf("%d", &N );
+
+    
  for (I=0; I<N; I++)
     {
      printf("Note %d : ", I+1);
@@ -25,7 +27,7 @@ void main()
  /* Affichage du tableau */
  printf("Voici vos notes :\n");
  for (I=0; I<N; I++){
- printf("%d -", A[I]);
+ printf(" Note %d = %d ", I+1,A[I]);
  
  Somme = Somme+A[I];
  }
@@ -39,4 +41,6 @@ void main()
     printf("vous etes redoublant");
  }
  else printf("vous etes exclu");
-}
+
+ }
+
