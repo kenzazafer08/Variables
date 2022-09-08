@@ -1,5 +1,11 @@
 # L'état d'avancement
- J'ai fait une revision sur les types de variables ,comment on peut lire et ecrire chaque  type de variable aussi les operateurs arithmetique et logique.
+ -les variables :  déclarée à l’aide d’un type et d’un identificateur pour stocké une donnée que nous voulont la manipuler dans notre programme .
+   - Integer : int.
+   - reel : float , double.
+   - caractere : char.
+   - bool : 0 ou 1.
+   
+   
  
 - les opérateurs : 
  
