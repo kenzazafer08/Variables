@@ -32,7 +32,7 @@ void main()
    Somme = Somme+A[I];
  }
  do {
-    int tmp;
+    
 printf("Calculer la moyenne 1: \n");
  printf("la meilleure note 2: \n");
  printf("la mauvaise note 3: \n");
@@ -53,31 +53,32 @@ printf("Calculer la moyenne 1: \n");
              else printf("vous etes exclu");
   			break;
   		case 2 :
+        int tmp=0;
              printf("\n");
              
              for (I=0; I<N; I++){
-             if(A[I+1]>A[I]){
-                tmp=A[I+1];
+             if(A[I]>tmp){
+                tmp=A[I];
              }    
          }printf("La meilleure note est : %d",tmp);
          break;
          case 3 :
-        
+        int tm=A[0];
              printf("\n");
              for (I=0; I<N; I++){
-             if(A[I+1]< A[I]){
-                tmp=A[I+1];
+             if(A[I]< tm){
+                tm=A[I];
              }    
-         }printf("La mauvaise note est : %d",tmp);
+         }printf("La mauvaise note est : %d",tm);
          break;
          case 4 :
-         
+         int t;
              printf("\n");
              for (I=0; I<N; I++){
              if(A[I+1]> A[I]){
-                tmp=A[I+1];
+                t=A[I+1];
                 A[I+1]=A[I];
-                A[I]=tmp;
+                A[I]=t;
              }    
          }printf("Voici vos notes trier :\n");
             for (I=0; I<N; I++){
