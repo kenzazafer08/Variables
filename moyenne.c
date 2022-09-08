@@ -9,8 +9,11 @@ void main()
  int Moyenne;   
  int Somme=0;
  char nom[20]; /* chaine de caractaires  */
+ int x=1;
   printf("Entrer votre nom : \n");
   scanf("%s", &nom );
+ do {
+
  printf("Bonjour %s Vous voulez calculer la moyenne de combien de notes (max.10) : ",nom);
  scanf("%d", &N );
 
@@ -41,6 +44,12 @@ void main()
     printf("vous etes redoublant");
  }
  else printf("vous etes exclu");
+
+ 
+ printf("\nSi vous voulez calculez d'autre moyenne entrer 0 sinon 1 :");
+ scanf("%d", &x);
+
+ }while (x==0);
 
  }
 
