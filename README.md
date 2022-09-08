@@ -24,6 +24,11 @@
 - les structures conditionnelles : qui permettent de tester si une condition est vraie ou non :
   - L'instruction if ... else : permet de verifié plusieur condition sure plusieure variables.
   - L'instruction switch : permet de verfié des condition sur le contenu de la meme variable.
+ 
+- les structures conditionnelles : qui permettent de tester si une condition est vraie ou non :
+  - L'instruction if ... else : permet de verifié plusieur condition sure plusieure variables.
+  - L'instruction switch : permet de verfié des condition sur le contenu de la meme variable.
+
 
 
  
