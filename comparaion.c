@@ -9,6 +9,7 @@ void main(){
   	scanf("%f%f%f", &num1, &num2, &num3);
   	switch(Op)
   	{
+		
   		case '=':
   			if(num1==num2 && num2==num3){
                 printf("Les chiffres que vous avez entrés sont égaux");
