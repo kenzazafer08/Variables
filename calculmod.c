@@ -144,6 +144,10 @@ void equation(){
              r=-c/b;
              printf("La solution de cette equation : x = %.2f\n",r);
         }  else{     
+    printf("Entrer b :\n");
+    scanf("%d",&b);
+    printf("Entrer c :\n");
+    scanf("%d",&c);
     d=(b*b)-(4*a*c);
     if(d<0){
         printf("Delta : (%d^2)-(4*%d*%d) = %.2f \n",b,a,c,d);
