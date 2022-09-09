@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <stdbool.h>
+
 void main()
 {
  int N; /*DIMENTION DU TABLEAU */  int A[N];  /* mon tableau   */
