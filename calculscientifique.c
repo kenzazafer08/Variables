@@ -21,7 +21,6 @@ void main(){
     printf("Le reste d'une division : M \n"); 
   	printf("Enter un Operateur : \n"); 
     scanf("%c", &Op);
-	
   	switch(Op)
   	{
 		case '+':
