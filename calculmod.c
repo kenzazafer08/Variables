@@ -1,54 +1,54 @@
 #include <stdio.h>
 #include <math.h>
 void mathematique(){
-     char Op;
+    int Op;
 	float num1, num2, result = 0;
     
 	printf("Calculatrice scientifique\n");
-    printf("Addition : + \n");
-    printf("Soustraction : -\n");
-    printf("Multiplication : *\n");
-    printf("Division : /\n");
-    printf("Puissance : ^\n"); 
-    printf("Racine caree : R \n");
-    printf("Factorielle : !\n");
-    printf("Logarithme : L \n");
-    printf("Exponentielle : E \n");
-    printf("SIN : N \n");
-    printf("TAN : T \n");
-    printf("COS : C \n");
-    printf("Le reste d'une division : M \n"); 
+    printf("Addition : 1 \n");
+    printf("Soustraction : 2 \n");
+    printf("Multiplication : 3 \n");
+    printf("Division : 4 \n");
+    printf("Puissance : 5 \n"); 
+    printf("Racine caree : 6  \n");
+    printf("Factorielle : 7 \n");
+    printf("Logarithme : 8 \n");
+    printf("Exponentielle : 9  \n");
+    printf("SIN : 10 \n");
+    printf("TAN : 11 \n");
+    printf("COS : 12 \n");
+    printf("Le reste d'une division : 13 \n"); 
   	printf("Enter un Operateur : \n"); 
-    scanf("%c", &Op);
+    scanf("%d", &Op);
   	switch(Op)
   	{
-		case '+':
+		case 1:
             printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	        scanf("%f%f", &num1, &num2);
   			result = num1 + num2;
-            printf("\n Le resultat de %.2f %c %.2f  = %.2f", num1, Op, num2, result);
+            printf("\n Le resultat de %.2f + %.2f  = %.2f", num1, num2, result);
   			break;
-  		case '-':
+  		case 2:
             printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	        scanf("%f%f", &num1, &num2);
   			result = num1 - num2;
-            printf("\n Le resultat de %.2f %c %.2f  = %.2f", num1, Op, num2, result);
+            printf("\n Le resultat de %.2f - %.2f  = %.2f", num1, num2, result);
   			break;
-        case '*':
+        case 3:
             printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	        scanf("%f%f", &num1, &num2);
   			result = num1 * num2;
-            printf("\n Le resultat de %.2f %c %.2f  = %.2f", num1, Op, num2, result);
+            printf("\n Le resultat de %.2f * %.2f  = %.2f", num1, num2, result);
   			break;
-        case '/':
+        case 4:
         printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	    scanf("%f%f", &num1, &num2);
         if(num2!=0){
   			result = num1 / num2;
-            printf("\n Le resultat de %.2f %c %.2f  = %.2f", num1, Op, num2, result);
+            printf("\n Le resultat de %.2f / %.2f  = %.2f", num1, num2, result);
             } else printf("Erreur !");
             break;
-        case 'M':
+        case 5:
         int mod,n,m; 
         printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	    scanf("%d%d", &n, &m);
@@ -57,49 +57,49 @@ void mathematique(){
             printf("\n Le rest de %d / %d  = %d", n, m, mod);
             } else printf("Erreur !");
             break;  
-        case '^':
+        case 6:
             printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	        scanf("%f%f", &num1, &num2); 
   			result = pow(num1,num2);
             printf("\n La puissance de %.2f a %.2f  = %.2f", num1, num2, result);
   			break;
-        case 'L':
+        case 7:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = log(num1);
             printf("\n Logarithme de %.2f  = %.2f", num1, result);
   			break;
-        case 'E':
+        case 8:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = exp(num1);
             printf("\n L'exponentielle de %.2f  = %.2f", num1, result);
   			break;
-        case 'N':
+        case 9:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = sin(num1);
             printf("\n Le sin de %.2f  = %.2f", num1, result);
   			break;
-        case 'C':
+        case 10:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = cos(num1);
             printf("\n Le cos de %.2f  = %.2f", num1, result);
   			break;
-        case 'T':
+        case 11:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = tan(num1);
             printf("\n Le tan de %.2f  = %.2f", num1, result);
   			break;
-        case 'S':
+        case 12:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = sqrt(num1);
             printf("\n Le racine caree de %.2f  = %.2f", num1, result);
   			break;
-        case '!':
+        case 13:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1);
   			int i,r=1;
@@ -115,15 +115,15 @@ void mathematique(){
 void equation(){
    int a,b,c;
    float d,r,r1;
-   char choix; 
+   int n; 
     printf("--------Exquations------\n");
     printf("quel type de fonction vous voulez :\n");
     printf("Premier degree : 1\n");
     printf("Dexieme degree : 2\n");
-    scanf("%c",&choix);
-    switch (choix)
+    scanf("%d",&n);
+    switch (n)
     {
-    case '1':
+    case 1 :
         printf("Equation premier degree\n");
         printf("Entrer a :\n");
         scanf("%d",&b);
@@ -132,7 +132,7 @@ void equation(){
         r=-c/b;
         printf("La solution de cette equation : x = %.2f\n",r);
         break;
-    case '2':
+    case 2 :
         printf("Entrer a :\n");
         scanf("%d",&a);
         if(a==0){
