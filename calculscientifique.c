@@ -5,7 +5,8 @@ int main(){
     char Op;
 	float num1, num2, result = 0;
 	printf("Calculatrice normale");
-  	printf("\n Enter un Operator   : \n + _ - _ *_ / _ ^ _ PGCD _ ! ");
+  	printf("\n Enter un Operator   : \n Addition : +\nSoustraction : -\nMultiplication : *\n Division : / \nPuissance ^ \n
+    Plus grand divisseur commun :G\n Factorielle ! \n");
   	scanf("%c", &Op);
 	
   	switch(Op)
@@ -38,10 +39,10 @@ int main(){
             break;
         case '^':
             printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
-  	        scanf("%f%f", &num1, &num2);
+  	        scanf("%f%f", &num1, &num2); 
   			result = pow(num1,num2);
-  			break;
             printf("\n La puissance de %.2f a %.2f  = %.2f", num1, num2, result);
+  			break;
         case '!':
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1);
@@ -62,20 +63,7 @@ int main(){
                 }
             } printf("\n Le plus grand divisseur commun est :", result);
   			break;   
-        case 'P':
-            printf("\n Enter les deux valeurs Entieres que vous voulez calculer :  \n");
-            int num,nu,max;
-  	        scanf("%d%d", &num, &nu);
-            int k;
-            if (num>=nu){
-                max=num;
-            }else max=nu;
-  			for(k=max;k>=1;j--){
-                while(((num%k)!=0) || ((nu%k)!=0)){
-                 k--;
-                }
-            } printf("\n Le plus petit divisseur commun est :", result);
-  			break;  
+         
 		default:
 			printf("\n Vous avez entré un opérateur non valide ");				    			
 	}
