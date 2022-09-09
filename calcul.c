@@ -2,10 +2,10 @@
 int main(){
     char Op;
 	float num1, num2, result = 0;
-	printf("Calcul");
+	printf("Calculatrice normale");
   	printf("\n Enter un Operator   :  ");
   	scanf("%c", &Op);
-	printf("\n Enter deux valeurs : num1 and num2  :  \n");
+	printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	scanf("%f%f", &num1, &num2);
   	switch(Op)
   	{
