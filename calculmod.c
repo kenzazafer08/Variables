@@ -168,9 +168,6 @@ void equation(){
     printf("Choix non valide");
         break;
     }
-    
-    
-   
 }
 void main(){
     char choix;
