@@ -48,7 +48,7 @@ void mathematique(){
             printf("\n Le resultat de %.2f / %.2f  = %.2f", num1, num2, result);
             } else printf("Erreur !");
             break;
-        case 5:
+        case 13:
         int mod,n,m; 
         printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	    scanf("%d%d", &n, &m);
@@ -57,31 +57,31 @@ void mathematique(){
             printf("\n Le rest de %d / %d  = %d", n, m, mod);
             } else printf("Erreur !");
             break;  
-        case 6:
+        case 5:
             printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	        scanf("%f%f", &num1, &num2); 
   			result = pow(num1,num2);
             printf("\n La puissance de %.2f a %.2f  = %.2f", num1, num2, result);
   			break;
-        case 7:
+        case 8:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = log(num1);
             printf("\n Logarithme de %.2f  = %.2f", num1, result);
   			break;
-        case 8:
+        case 9:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = exp(num1);
             printf("\n L'exponentielle de %.2f  = %.2f", num1, result);
   			break;
-        case 9:
+        case 10:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = sin(num1);
             printf("\n Le sin de %.2f  = %.2f", num1, result);
   			break;
-        case 10:
+        case 12:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = cos(num1);
@@ -93,13 +93,13 @@ void mathematique(){
   			result = tan(num1);
             printf("\n Le tan de %.2f  = %.2f", num1, result);
   			break;
-        case 12:
+        case 6:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1); 
   			result = sqrt(num1);
             printf("\n Le racine caree de %.2f  = %.2f", num1, result);
   			break;
-        case 13:
+        case 7:
             printf("\n Enter une valeur que vous voulez calculer :  \n");
   	        scanf("%f", &num1);
   			int i,r=1;
