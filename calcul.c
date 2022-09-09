@@ -3,7 +3,7 @@ int main(){
     char Op;
 	float num1, num2, result = 0;
 	printf("Calculatrice normale");
-  	printf("\n Enter un Operator   :  ");
+  	printf("\n Enter un Operateur   :  ");
   	scanf("%c", &Op);
 	printf("\n Enter les deux valeurs que vous voulez calculer :  \n");
   	scanf("%f%f", &num1, &num2);
