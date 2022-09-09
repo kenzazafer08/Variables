@@ -19,4 +19,11 @@ int main()
         }
         printf("\n");
     }
+    printf("\n");
+    int k, l=0;
+    for(k=0;k<=ligne;k++){
+        for(l=0;l<=k;l++){
+            printf("*");
+        }printf("\n");
+    }
 }
